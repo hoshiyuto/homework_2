@@ -32,7 +32,8 @@
 
 
 <h2><b>New book</b></h2>
-<%= form_with model: Book.new , url: '/books', method: :post do |f| %>
+<%= form_with model: @book , url: '/books', method: :post do |f| %>
+
 
 <% if @book.errors.any? %>
   <%= @book.errors.count %>件のエラーが発生しました
